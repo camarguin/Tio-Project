@@ -1,0 +1,538 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btns {
+    background-color: #478ac9;
+    font-size: 13px;
+    padding: 10px 25px;
+    border: none;
+    color: white;
+    font-weight: 700;
+}
+
+.btns:hover {
+    background-color: #7eadd9;
+}
+
+/* HEADER - SOCIAL MEDIAS AND PHONE */
+
+.social-medias {
+    /* text-align: center; */
+    height: 25px;
+    width: 100%;
+    background-color: rgb(190, 190, 190, 0.7);
+}
+
+#phone-mail {
+    float: left;
+}
+
+#phone-mail label {
+    font-size: 16px;
+    color: black;
+}
+
+#phone-mail i {
+    color: rgb(0, 0, 0, 0.7);
+}
+
+.social-medias ul {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.social-medias ul li {
+    margin-left: 30px;
+}
+
+.social-medias a {
+    color: rgb(0, 0, 0, 0.7);
+}
+
+.social-medias a:hover {
+    color: #0080DE;
+    transition: 400ms;
+    background: none !important;
+}
+
+/* HEADER - MENU */
+
+.logo {
+    margin-left: 100px;
+}
+
+.logo img {
+    width: 105px;
+}
+
+#logoid:hover {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0) 20%);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav {
+    /* background: rgb(24, 26, 34); */
+    background: linear-gradient(180deg, rgba(24, 26, 34, 1) 0%, rgba(89, 89, 89, 1) 100%);
+    height: 80px;
+    width: 100%;
+    text-decoration: none;
+    z-index: 1;
+}
+
+nav ul {
+    float: right;
+    margin-right: 60px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 70px;
+    margin: 0;
+}
+
+nav ul li a {
+    color: rgb(169, 169, 169);
+    font-weight: 500;
+    font-size: 20px;
+    padding: 5px 13px;
+    text-decoration: none;
+    background: linear-gradient(180deg, rgba(24, 26, 34, 1) 0%, rgba(89, 89, 89, 1) 100%);
+}
+
+a:hover {
+    color: white;
+    transition: 400ms;
+    background: linear-gradient(180deg, rgba(24, 26, 34, 1) 0%, rgba(89, 89, 89, 1) 100%);
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 70px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    display: none;
+}
+
+/* BODY */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr 0.9fr 0.5fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "section1-grid" "section2-grid" "section3-grid" "section4-grid" "section5-grid" "section6-grid";
+}
+
+.section1-grid {
+    grid-area: section1-grid;
+    text-align: center;
+    /* background: url(../images/justitia-2597016_1920.jpg);
+    background-attachment: cover; */
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/justitia-2597016_1920.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    max-height: 1123px;
+}
+
+.section1-grid h1 {
+    margin: 150px 0px 0 0;
+    font-size: 96px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    line-height: 1.1;
+    color: white;
+    /* text-shadow: 1px 1px 2px rgba(150, 150, 150, 1); */
+}
+
+.section1-grid h4 {
+    margin: 30px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.section1-grid h6 {
+    color: white;
+    font-size: 22px;
+}
+
+.section1-grid button {
+    margin: 30px;
+}
+
+#buttonDiff {
+    margin-top: 100px;
+    background-color: #C3EBFF;
+    font-size: 13px;
+    padding: 10px 25px;
+    border: none;
+    color: black;
+    font-weight: 400;
+}
+
+#buttonDiff:hover {
+    background-color: #7eadd9;
+}
+
+.section2-grid {
+    grid-area: section2-grid;
+}
+
+.section2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr;
+    gap: 1px 1px;
+    grid-template-areas: "section2-pic section2-info";
+    margin: 50px;
+    margin-bottom: 0px;
+}
+
+.section2-info {
+    grid-area: section2-info;
+    margin: 20px;
+}
+
+.section2-info h1 {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+
+.section2-info p {
+    text-align: justify;
+    line-height: 2;
+}
+
+.section2-pic {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-area: section2-pic;
+}
+
+.section2pic-picture {
+    grid-area: 3 / 2 / 9 / 8;
+}
+
+.section2pic-picBack {
+    grid-area: 2 / 3 / 8 / 9;
+    background-color: #D5D8DC;
+    z-index: -100;
+}
+
+#slideshow {
+    /* width: 100% !important; */
+    max-height: 900px;
+    text-align: center;
+}
+
+#slideshow .carousel-item {
+    width: 100% !important;
+}
+
+#slideshow p {
+    color: black !important;
+}
+
+/* Slideshow container */
+
+.section2Slide {
+    position: relative;
+}
+
+/* Slides */
+
+.sld {
+    display: none;
+    padding: 80px;
+    text-align: center;
+    min-height: 390px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.sld h6 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 36px;
+}
+
+.sld q {}
+
+/* Next & previous buttons */
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    /* color: #888; */
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background: none !important;
+    color: gray;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: black;
+}
+
+/* The dot/bullet/indicator container */
+
+.dot-container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.section3-grid {
+    grid-area: section3-grid;
+    background-image: linear-gradient(0deg, rgba(179, 179, 179, 0.9), rgba(179, 179, 179, 0.9)), url(../images/hammerLaw.jpg);
+    background-position: 50% 50%;
+    text-align: center;
+}
+
+.section3Areas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 10px;
+    grid-template-areas: "area area area area";
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 80px;
+    height: auto;
+}
+
+.section3Areas img {
+    width: 60px;
+}
+
+.section3Areas h6 {
+    margin: 20px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.section3Areas button {
+    margin-top: 50px;
+}
+
+.section3Areas p {
+    margin-top: 30px;
+}
+
+.area {
+    margin: 30px;
+    max-width: 300px;
+}
+
+.section4-grid {
+    grid-area: section4-grid;
+    text-align: center;
+    background-color: #191919;
+    color: white;
+}
+
+.section4 {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas: "section4-estagio1 section4-pic section4-estagio3" "section4-estagio2 section4-pic section4-estagio4";
+    margin: 150px;
+    margin-bottom: 60px;
+}
+
+.section4 h6 {
+    font-family: 'Open Sans', sans-serif;
+    ;
+    font-size: 1em;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin: 20px;
+}
+
+.section4 .img-estagio {
+    max-width: 60px;
+    background-color: #478ac9;
+    color: white;
+    border-radius: 100%;
+    border: 5px solid #478ac9;
+    margin-top: 20px;
+}
+
+.section4-estagio1 {
+    grid-area: section4-estagio1;
+    border: 1px solid white;
+    height: 300px;
+    padding: 20px;
+}
+
+.section4-estagio2 {
+    grid-area: section4-estagio2;
+    border: 1px solid white;
+    height: 300px;
+    padding: 20px;
+}
+
+.section4-pic {
+    grid-area: section4-pic;
+}
+
+.section4-pic img {
+    object-fit: cover;
+    height: 620px;
+}
+
+.section4-estagio3 {
+    grid-area: section4-estagio3;
+    border: 1px solid white;
+    height: 300px;
+    padding: 20px;
+}
+
+.section4-estagio4 {
+    grid-area: section4-estagio4;
+    border: 1px solid white;
+    height: 300px;
+    padding: 20px;
+}
+
+.section5-grid {
+    grid-area: section5-grid;
+    text-align: center;
+    background-color: #E0E5EB;
+}
+
+.section5-grid h1 {
+    margin: 40px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+/**/
+
+.carousel {
+    width: 100%;
+    margin: 0 auto;
+    height: 90vh;
+    /* background-color: rgb(254, 249, 231, 0.4); */
+    background-color: #E0E5EB;
+}
+
+.carousel-item {
+    width: 500px !important;
+    height: 250px !important;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 4px;
+}
+
+.carousel-item img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    border-radius: 100%;
+    margin: -120px auto 0;
+    box-shadow: 0 0 0 5px #A6ACAF;
+}
+
+.carousel-item h1 {
+    font-size: 20px;
+    color: #444;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.carousel-item h2 {
+    font-size: 14px;
+    color: rgb(81, 90, 90);
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.profile-bio {
+    font-size: 14px;
+    color: grey;
+    line-height: 1.7;
+    font-style: italic;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.section6-grid {
+    grid-area: section6-grid;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+}
