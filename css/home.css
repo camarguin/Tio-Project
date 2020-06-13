@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -21,6 +25,13 @@ img {
 
 .btns:hover {
     background-color: #7eadd9;
+}
+
+.contato-input {
+    background-color: rgb(255, 255, 255, 0.9) !important;
+    max-width: 500px;
+    margin: 10px;
+    border: 2px solid #478ac9 !important;
 }
 
 /* HEADER - SOCIAL MEDIAS AND PHONE */
@@ -135,11 +146,11 @@ a:hover {
 }
 
 #check {
-    display: none;
+    display: none !important;
 }
 
 .checkbtn {
-    display: none;
+    display: none !important;
 }
 
 /* BODY */
@@ -147,7 +158,7 @@ a:hover {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr 0.9fr 0.5fr 1fr;
+    grid-template-rows: 0.5fr 0.6fr 0.5fr 0.9fr 0.5fr 1fr;
     gap: 1px 1px;
     grid-template-areas: "section1-grid" "section2-grid" "section3-grid" "section4-grid" "section5-grid" "section6-grid";
 }
@@ -155,8 +166,6 @@ a:hover {
 .section1-grid {
     grid-area: section1-grid;
     text-align: center;
-    /* background: url(../images/justitia-2597016_1920.jpg);
-    background-attachment: cover; */
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/justitia-2597016_1920.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -253,46 +262,32 @@ a:hover {
     z-index: -100;
 }
 
-#slideshow {
-    /* width: 100% !important; */
-    max-height: 900px;
-    text-align: center;
-}
-
-#slideshow .carousel-item {
-    width: 100% !important;
-}
-
-#slideshow p {
-    color: black !important;
-}
-
 /* Slideshow container */
 
 .section2Slide {
     position: relative;
+    min-height: 350px;
+    /* background-color: green; */
 }
-
-/* Slides */
 
 .sld {
     display: none;
-    padding: 80px;
+    padding: 10px;
     text-align: center;
-    min-height: 390px;
+    min-height: 300px;
     margin-left: 300px;
     margin-right: 300px;
 }
 
 .sld h6 {
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     font-size: 36px;
 }
 
-.sld q {}
-
-/* Next & previous buttons */
+.sld q {
+    line-height: 30px;
+}
 
 .prev, .next {
     cursor: pointer;
@@ -301,7 +296,6 @@ a:hover {
     width: auto;
     margin-top: -30px;
     padding: 16px;
-    /* color: #888; */
     font-weight: bold;
     font-size: 20px;
     border-radius: 0 3px 3px 0;
@@ -310,29 +304,21 @@ a:hover {
     color: gray;
 }
 
-/* Position the "next button" to the right */
-
 .next {
     position: absolute;
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
     color: black;
 }
 
-/* The dot/bullet/indicator container */
-
 .dot-container {
     text-align: center;
-    padding: 20px;
+    /* padding: 20px; */
 }
-
-/* The dots/bullets/indicators */
 
 .dot {
     cursor: pointer;
@@ -345,10 +331,33 @@ a:hover {
     transition: background-color 0.6s ease;
 }
 
-/* Add a background color to the active dot/circle */
-
 .active, .dot:hover {
     background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }
 
 .section3-grid {
@@ -530,9 +539,110 @@ a:hover {
 
 .section6-grid {
     grid-area: section6-grid;
+    text-align: center;
+    background-image: linear-gradient(#404040, #1a1a1a);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.section6-grid h1 {
+    margin: 50px;
+    color: white;
+}
+
+.section6Top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "section6-address section6-phone section6-email";
+    margin: 100px;
+}
+
+.section6Top h4 {
+    font-size: 4em;
+}
+
+.section6Top h6 {
+    font-weight: 800;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.section6Top p {
+    line-height: 30px;
+}
+
+.section6-address {
+    grid-area: section6-address;
+}
+
+.section6-phone {
+    grid-area: section6-phone;
+}
+
+.section6-email {
+    grid-area: section6-email;
+}
+
+.section6Down {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "section6-form section6-map";
+    margin: 50px;
+    margin-top: 100px;
+}
+
+.section6Down h3 {
+    margin-bottom: 40px;
+}
+
+.section6-form {
+    grid-area: section6-form;
+    margin: 0 auto;
+}
+
+.contato-form {
+    color: black;
+}
+
+#mensagem-form {
+    height: auto !important;
+    margin-top: 0 !important;
+}
+
+.section6-map {
+    grid-area: section6-map;
+    text-align: justify;
+}
+
+.section6-map p {
+    max-width: 600px;
 }
 
 footer {
     text-align: center;
     background-color: black;
+    color: white;
+}
+
+/* Placeholders */
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: gray;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: gray;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: gray;
 }

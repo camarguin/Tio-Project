@@ -9,5 +9,5 @@ $(document).ready(function () {
 autoplay();
 function autoplay() {
   $('.carousel').carousel('next');
-  setTimeout(autoplay, 3000);
+  setTimeout(autoplay, 5000);
 }

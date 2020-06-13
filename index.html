@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lucas Gerhardt de Camargo">
     <meta name="keywords"
         content="Advocacia Gerhardt, TECNOLOGIA A SERVIÇO DA JUSTIÇA, Nosso Escritório, Nossos Valores, Nossa Missão, Áreas de Atuação, Advogados Associados, Informações de Contato, Entre em contato">
     <meta name="description" content="">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <script src="./js/jQuery.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/home.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -33,25 +35,25 @@
     </div>
     <header>
         <nav>
-            <!-- <input type="checkbox" id="check">
+            <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars"></i>
-            </label> -->
+            </label>
             <a id="logoid" href="#" class="logo"><img src="./images/imageedit_10_4083291047.png" alt="logo"></a>
             <ul id="menu-ul">
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Escritório</a></li>
-                <li><a href="#">Atuação</a></li>
-                <li><a href="#">Estágio</a></li>
-                <li><a href="#">Nosso Time</a></li>
+                <li><a href="#section1G">Início</a></li>
+                <li><a href="#section2G">Escritório</a></li>
+                <li><a href="#section3G">Atuação</a></li>
+                <li><a href="#section4G">Estágio</a></li>
+                <li><a href="#section5G">Nosso Time</a></li>
                 <li><a href="#">Advogados</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#section6G">Contato</a></li>
                 <li><a href="#">Seja um Associado</a></li>
             </ul>
         </nav>
     </header>
     <div class="grid-container">
-        <div class="section1-grid">
+        <div id="section1G" class="section1-grid">
             <h1>Advocacia Gerhardt</h1>
             <h4>TECNOLOGIA A SERVIÇO DA JUSTIÇA</h4>
             <h6>Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit
@@ -60,7 +62,7 @@
             <br>
             <button id="buttonDiff">Agender uma Consulta</button>
         </div>
-        <div class="section2-grid">
+        <div id="section2G" class="section2-grid">
             <div class="section2">
                 <div class="section2-info">
                     <h1>Nosso Escritório</h1>
@@ -86,14 +88,14 @@
                 </div>
             </div>
             <div class="section2Slide">
-                <div class="sld">
+                <div class="sld fade">
                     <h6><i class="fas fa-quote-left"></i> Nossa Missão</h6>
                     <br>
                     <q>Prover serviços jurídicos de qualidade, a fim de auxiliar os clientes a alcançar seus objetivos
                         de forma eficaz e inovadora, valorizamos e somos dedicados a preservar a credibilidade
                         construída.</q>
                 </div>
-                <div class="sld">
+                <div class="sld fade">
                     <h6><i class="fas fa-quote-left"></i> Nossos Valores</h6>
                     <br>
                     <q>A maior riqueza que o advogado pode adquirir durante a sua vida profissional, é a confiança nele
@@ -110,24 +112,8 @@
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
             </div>
-            <!-- <div class="carousel carousel-slider" id="slideshow">
-                <div class="carousel-item" href="#one!">
-                    <h2><i class="fas fa-quote-left"></i> Nossa Missão</h2>
-                    <p class="white-text">A maior riqueza que o advogado pode adquirir durante a sua vida profissional,
-                        é a confiança nele
-                        depositada. A Advocacia Gerhardt busca atender as necessidades de seus clientes através da
-                        modernização e constante atualização. Nossa principal meta é fazer jus a confiança que nos é
-                        depositada; nosso compromisso é com a honestidade, atendendo suas necessidades, militando com a
-                        coragem necessária ao exercício da advocacia, rompendo qualquer obstáculo para alcançar a melhor
-                        solução para o seu problema</p>
-                </div>
-                <div class="carousel-item" href="#two!">
-                    <h2>Second Panel</h2>
-                    <p class="white-text">This is your second panel</p>
-                </div>
-            </div> -->
         </div>
-        <div class="section3-grid">
+        <div id="section3G" class="section3-grid">
             <h1>Áreas de Atuação</h1>
             <div class="section3Areas">
                 <div class="area">
@@ -161,7 +147,7 @@
             </div>
 
         </div>
-        <div class="section4-grid">
+        <div id="section4G" class="section4-grid">
             <h1>Programa Estagiário</h1>
             <h6>Advocacia Gerhardt propoem um programa de estagio o qual voce pode solicitar...</h6>
             <div class="section4">
@@ -191,7 +177,7 @@
             </div>
             <button class="btns">SOLICITE SUA VAGA</button>
         </div>
-        <div class="section5-grid">
+        <div id="section5G" class="section5-grid">
             <h1>Nosso Time</h1>
             <div class="carousel" id="carousel">
                 <div class="carousel-item" href="#one">
@@ -273,8 +259,66 @@
                 </div>
             </div>
         </div>
-        <div class="section6-grid">
-
+        <div id="section6G" class="section6-grid">
+            <h1>Informações de Contato</h1>
+            <div class="section6Top">
+                <div class="section6-address">
+                    <h4><i class="fas fa-map-marker-alt"></i></h4>
+                    <h6>Endereço</h6>
+                    <p>Av. Michele Santinone, Nº 5-A
+                        <br>
+                        75780-000
+                        <br>
+                        Ipameri - GO
+                    </p>
+                </div>
+                <div class="section6-phone">
+                    <h4><i class="fas fa-phone"></i></h4>
+                    <h6>Telefones</h6>
+                    <p>(64) 3491 - 4479
+                        <br>
+                        (64) 9 9265 - 7773
+                        <br>
+                        (64) 9 9268 - 7930
+                    </p>
+                </div>
+                <div class="section6-email">
+                    <h4><i class="fas fa-envelope"></i></h4>
+                    <h6>Email</h6>
+                    <p>atendimento@advocaciagerhardt.com.br</p>
+                </div>
+            </div>
+            <div class="section6Down">
+                <div class="section6-form">
+                    <h3>Entre em Contato</h3>
+                    <br>
+                    <form class="contato-form" action="_POST">
+                        <input class="contato-input" type="text" placeholder="Nome">
+                        <input class="contato-input" type="email" placeholder="Email">
+                        <input class="contato-input" type="tel"
+                            pattern="\+?\d{0,2}[\s\(\-]?([0-9]{3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})"
+                            placeholder="Telefone" name="telefone" required="">
+                        <input class="contato-input" type="text" placeholder="Assunto">
+                        <textarea id="mensagem-form" class="contato-input" placeholder="Mensagem" rows="5" cols="50"
+                            name="message" required=""></textarea>
+                        <br>
+                        <input class="btns" type="submit">
+                    </form>
+                </div>
+                <div class="section6-map">
+                    <h3>Nossa Localização</h3>
+                    <p>A Advocacia Gerhardt possui sede na região Centro-Oeste - Ipameri-GO, contando com
+                        correspondentes em Goiânia e em Brasília, através dos quais consegue maior agilidade nos
+                        recursos que tramitam junto ao Tribunal Estadual e Tribunais Superiores; contando ainda com
+                        escritórios credenciados em várias regiões do pais, exercendo a atividade jurídica em todo o
+                        território nacional.</p>
+                    <br>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.462054596868!2d-48.163664185118776!3d-17.722854987878385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a705dfc79de885%3A0x938cb15bb65beeb9!2sR.%20Michele%20Santinoni%2C%205%20-%20Centro%2C%20Ipameri%20-%20GO%2C%2075780-000%2C%20Brazil!5e0!3m2!1sen!2sca!4v1592008243225!5m2!1sen!2sca"
+                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
         </div>
     </div>
     <footer>
@@ -284,6 +328,8 @@
     <script src="./js/slideQuotes.js"></script>
     <script src="./js/materialize.min.js"></script>
     <script src="./js/carousel.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/AOS.js"></script>
 
 </body>
 
