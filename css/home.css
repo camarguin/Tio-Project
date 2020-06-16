@@ -864,7 +864,7 @@ footer {
     .section6Down {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 0.7fr 1fr;
         gap: 50px 1px;
         grid-template-areas: "section6-form" "section6-map";
     }
@@ -940,6 +940,7 @@ footer {
         margin: 20px;
     }
 }
+
 @media (max-width: 570px) {
     nav ul li a {
         padding: 0;
@@ -955,15 +956,12 @@ footer {
     }
     .section4-estagio1 {
         padding: 0;
-
     }
     .section4-estagio2 {
         padding: 0;
-
     }
     .section4-estagio3 {
         padding: 0;
-
     }
     .section4-estagio4 {
         padding: 0;
@@ -978,11 +976,11 @@ footer {
     .section6-form form textarea {
         max-width: 80vw;
     }
-
 }
+
 @media (max-width: 500px) {
     .grid-container {
-        grid-template-rows: 0.3fr 0.5fr 0.4fr 0.4fr 0.3fr 0.5fr;
+        grid-template-rows: 0.3fr 0.5fr 0.4fr 0.4fr 0.4fr 0.5fr;
     }
     h1 {
         font-size: 3em !important;
@@ -991,13 +989,104 @@ footer {
         font-size: 1.3em !important;
     }
     .sld {
-        min-height: 370px;
+        min-height: 400px;
+    }
+    .section3Areas p {
+        font-size: 12px;
+        margin: 25px;
+        line-height: 22px;
+    }
+    .section4-grid h6 {
+        font-size: 12px;
+        margin: 25px;
+        line-height: 30px;
+    }
+    .section4-pic {
+        display: none;
+    }
+    .section4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 25px 25px;
+        grid-template-areas: "section4-estagio1 section4-estagio3" "section4-estagio2 section4-estagio4";
+        margin: 25px;
+        margin-top: 50px;
+        background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../images/rsz_student-849825_1920.jpg);
+    }
+    .section4 p {
+        font-size: 12px;
+        margin: 25px;
+        line-height: 22px;
+    }
+    .carousel {
+        min-height: 700px;
+        width: 100vw !important;
     }
     .carousel h1 {
-        font-size: 2em !important;
+        font-size: 1.5em !important;
     }
     .carousel-item {
-        min-height: 300px;
+        min-height: 400px;
         max-width: 100vw;
+        margin: 0 auto;
+    }
+    .carousel-item p {
+        max-width: 60vw;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .carousel .carousel-item {
+        /* width: 90vw !important; */
+    }
+}
+@media (max-width: 435px) {
+    .carousel-item {
+        margin-left: 9vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .grid-container {
+        grid-template-columns: 100%;
+        /* grid-template-rows: 1fr 1fr 0.4fr 0.4fr 0.4fr 0.5fr; */
+    }
+    .grid-container h1 {
+        font-size: 2em !important;
+    }
+    .section2 {
+        margin: 20px;
+    }
+    .sld h6 {
+        /* font-size: 1.5em !important; */
+        text-align: center;
+        font-size: 16px;
+    }
+    .sld {
+        min-height: 500px;
+    }
+    .sld q {
+        margin: 20px;
+    }
+    .section3Areas {
+        grid-template-columns: 50% 50%;
+        width: 100%;
+        gap: 50px 0px;
+        grid-template-areas: "area area" "area area";
+        margin: 0 auto;
+    }
+    .section4 p {
+        margin: 5px;
+    }
+    .carousel-item {
+        margin-left: 15vw;
+    }
+}
+@media (max-width: 360px) {
+    .carousel-item { margin-left: 20vw;}
+}
+@media (max-height: 650px) {
+    nav ul li a {
+        line-height: 27px;
     }
 }
