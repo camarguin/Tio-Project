@@ -1040,9 +1040,10 @@ footer {
         /* width: 90vw !important; */
     }
 }
+
 @media (max-width: 435px) {
     .carousel-item {
-        margin-left: 9vw;
+        /* margin-left: 9vw; */
     }
 }
 
@@ -1079,12 +1080,16 @@ footer {
         margin: 5px;
     }
     .carousel-item {
-        margin-left: 15vw;
+        /* margin-left: 15vw; */
     }
 }
+
 @media (max-width: 360px) {
-    .carousel-item { margin-left: 20vw;}
+    .carousel-item {
+        /* margin-left: 20vw; */
+    }
 }
+
 @media (max-height: 650px) {
     nav ul li a {
         line-height: 27px;
